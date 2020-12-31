@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Langar', cursive;
+}
+#content{
+    background: whitesmoke;
+}
+header{
+    display: flex;
+    height: 7vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px 80px;
+    /* background: rgb(245, 94, 94); */
+    /* background: linear-gradient(90deg, hsla(298, 68%, 90%, 1) 0%, hsla(30, 82%, 91%, 1) 100%); */
+    /* background: linear-gradient(135deg, hsla(38, 100%, 60%, 1) 28%, hsla(58, 100%, 68%, 1) 71%); */
+    background: linear-gradient(135deg, hsla(38, 100%, 60%, 0.8) 28%, hsla(58, 100%, 68%, 0.7) 71%);
+    box-shadow: 0 20px 16px 2px rgba(0,0,0,.2);
+    z-index: 4;
+}
+#logo-title{
+    display: flex;
+    width: 320px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#logo-title h2{
+    color: rgb(151, 12, 12);
+    font-size: 2.4rem;
+    position: relative;
+    top: 5px;
+}
+nav{
+    width: 400px;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    list-style: none;
+}
+ul li{
+    overflow: hidden;
+}
+nav ul li a{
+    text-decoration: none;
+    /* color: black; */
+    color: rgb(151, 12, 12);
+    position: relative;
+}
+#intro{
+    height: 88vh;
+    width: 100%;
+    background-image: url("./pexels-dana-tentis-1239312.jpg");
+    background-size: 100% 100%;
+    position: absolute;
+    margin-top: 0 !important;
+    z-index: -1;
+}
+.intro-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    color: white;
+    text-shadow: 1px 2px black;
+}
+#welcome-msg{
+    height: 280px;
+    width: 600px;
+    margin: 40px auto 40px auto;
+    text-align: center;
+}
+#welcome-msg h2{
+    font-size: 3.6rem;
+    /* font-family: cursive !important; */
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-weight: 600;
+    /* position: absolute; */
+    /* top: 60px; */
+}
+#welcome-msg h3{
+    font-size: 1.6rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+#info-box{
+    height: 240px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+#info-hours{
+    line-height: 20px;
+}
+#info-box h4, h3{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.red-text{
+    color: rgb(214, 47, 47);
+}
+
+/* Menu */
+.divider {
+    height: 3px;
+    width: 80%;
+    margin: 0 auto 20px auto;
+    background: rgb(250, 250, 250);
+    background: linear-gradient(90deg, hsl(0, 99%, 32%), hsl(0, 83%, 66%), hsl(0, 99%, 32%));
+    border-radius: 4px;
+  }
+
+#menu{
+    height: 88vh;
+    width: 100%;
+    background-color: rgb(255, 239, 188);
+    position: absolute;
+    padding-top: 5vh;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#starters{
+    
+}
+.menu-section{
+    width: 80vw;
+    height: auto;
+    /* border: 4px solid black; */
+    margin-top: 40px;
+}
+#menu h2{
+    color: rgb(151, 12, 12);
+    font-size: 2rem;
+}
+#menu h5, h3{
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Langar', cursive;
+}
+.itemGrid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+.itemGrid div{
+    border: 4px solid hsl(0, 90%, 38%);
+    border-radius: 4px;
+    padding: 10px;
+    text-overflow: clip;
+    width: 20vw;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 20px 0;
+    transition: all 0.2s ease;
+}
+.itemGrid div:hover{
+    background: whitesmoke;
+    box-shadow: 0px 0px 6px 2px rgb(88, 88, 88);
+}
+/* CONTACT */
+#contact{
+    height: 88vh;
+    width: 100%;
+    background-color: rgb(255, 239, 188);
+    position: absolute;
+    padding-top: 5vh;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#contact div h2{
+    color: rgb(151, 12, 12);
+    font-size: 2rem;
+}
+#contact .divider{
+
+}
+#contact-container{
+    height: 20vh;
+    width: 80vw;
+    margin: 0px auto 20px auto;
+    padding: 70px 0 70px 0;
+    background: whitesmoke;
+    border: 3px solid hsl(0, 90%, 38%);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer{
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    /* background: linear-gradient(90deg, rgb(245, 168, 187) 0%, hsla(30, 82%, 91%, 1) 100%); */
+    background: linear-gradient(135deg, hsla(38, 100%, 60%, 1) 28%, hsla(58, 100%, 68%, 1) 71%);
+    box-shadow: 0 -20px 16px 2px rgba(0,0,0,.3);
+    position: absolute;
+    bottom: 0;
+    color: rgb(151, 12, 12);
+}
+footer ul{
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 6px;
+}
+.active{
+    color: rgb(161, 37, 37) !important;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid rgb(151, 12, 12);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+  }
+  a.active::after {
+    transform: translateX(0%);
+  }
